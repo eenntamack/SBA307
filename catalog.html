@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="styles/catalog.css" rel="stylesheet"/>
+    <!-- Sources:
+     Profile Image Icon: https://icons8.com/icons/set/user
+     Other cars resource:https://www.pngegg.com/
+     -->
+    <style>
+        ul{
+            display:flex;
+            justify-content: space-around;
+            height:100%;
+        }
+        nav{
+            height:70px;
+        }
+        body{
+            height:100%;
+            width:100%;
+        }
+        body{
+            padding:10px;
+            background-color: #CAAB7D;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23ac8f62' fill-opacity='0.6'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E");
+            display: flex;
+            justify-content: center;
+        }
+        nav{
+            position:fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg " >
+            <div class="collapse navbar-collapse bColor fixedBar" style="background-color: blanchedalmond; height:80px; align-content:center; margin-top:-10px; position:fixed; width: 1500px; z-index:50; margin-left:-80px;">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mWidth" style="align-content:center; border-style: solid; border-color: rgb(96, 82, 61);">
+                <li class="nav-item" style="display:flex; align-items: center; transform:scale(1.25);"><img src="miscellaneous/ProfileImage.png" alt="user profile"/></li>
+                <li class="nav-item" style=" display:flex; align-items: center; font-size:40px;">John Anon</li>
+                <li class="nav-item" style="display:flex; align-items: center; font-size: 25px;"><strong> Catalog</strong></li>
+                <li class="nav-item" style="display:flex; align-items: center;">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" class="background-color:#CAAB7D;">
+                          Menu
+                        </button>
+                        <ul class="dropdown-menu" style="background-color:#CAAB7D;">
+                          <li><a class="dropdown-item" style="background-color:#CAAB7D; border-width:2px 2px 1px 2px; border-style:solid; border-color:black;" href="#">Settings</a></li>
+                          <li><a class="dropdown-item"  style="background-color:#CAAB7D; border-width:1px 2px 2px 2px; border-style:solid; border-color:black;" href="user.html">Profile</a></li>
+                        </ul>
+                      </div>
+            </ul>
+            </div>
+    </nav>
+    <section class="section1" style="display:flex; flex-direction: column; justify-content: center; margin-top:30px;">
+        <table style="width:100%; display: flex; justify-content: center; margin-left: 80;">
+            <tr>
+                <td>
+                    <div class="card hover shadow car-item carlayout" style="width: 15rem; height:30rem; ">
+                        <img src="cars/mercedes-benz.png" class="card-img-top carPos" alt="mercedes-benz">
+                        <div class="card-body cardSize">
+                          <h5 class="card-title">Name:</h5>
+                          <p>mercedes-benz</p>
+                          <h5 class="card-title">Model:</h5>
+                          <p>Unknown</p>
+                          <h5 class="card-title">Owner:</h5>
+                          <p>You</p>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="card hover shadow car-item carlayout" style="width: 15rem; height:30rem; ">
+                        <img src="cars/2010 Toyota Corolla 2017.png" class="card-img-top carPos" alt="mercedes-benz">
+                        <div class="card-body cardSize">
+                          <h5 class="card-title">Name:</h5>
+                          <p>Toyota Corolla</p>
+                          <h5 class="card-title">Model:</h5>
+                          <p>2017</p>
+                          <h5 class="card-title">Owner:</h5>
+                          <p>Alice Idk</p>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="card hover shadow car-item carlayout" style="width: 15rem; height:30rem; ">
+                        <img src="cars/2013 Ford Escape 2012 Ford Escape Car 2011 Ford Escape Limited.png" class="card-img-top carPos" alt="mercedes-benz">
+                        <div class="card-body cardSize">
+                          <h5 class="card-title">Name:</h5>
+                          <p>Ford Escape</p>
+                          <h5 class="card-title">Model:</h5>
+                          <p>2013</p>
+                          <h5 class="card-title">Owner:</h5>
+                          <p>Unclaimed</p>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="card hover shadow car-item carlayout" style="width: 15rem; height:30rem; ">
+                        <img src="cars/2013 Scion FR-S 2016 Scion FR-S 2015.png" class="card-img-top carPos" alt="mercedes-benz">
+                        <div class="card-body cardSize">
+                          <h5 class="card-title">Name:</h5>
+                          <p>Scion</p>
+                          <h5 class="card-title">Model:</h5>
+                          <p>FR-S 2016</p>
+                          <h5 class="card-title">Owner:</h5>
+                          <p>Unclaimed</p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="card hover shadow car-item carlayout" style="width: 15rem; height:30rem; ">
+                        <img src="cars/2017 BMW X3 Car.png" class="card-img-top carPos" alt="mercedes-benz">
+                        <div class="card-body cardSize">
+                          <h5 class="card-title">Name:</h5>
+                          <p>BMW</p>
+                          <h5 class="card-title">Model:</h5>
+                          <p>X3 2017</p>
+                          <h5 class="card-title">Owner:</h5>
+                          <p>Unclaimed</p>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="card hover shadow carlayout car-item" style="width: 15rem; height:30rem; ">
+                        <img src="cars/2017 Nissan Titan XD Car Nissan Altima Four-wheel drive.png" class="card-img-top carPos" alt="mercedes-benz">
+                        <div class="card-body cardSize">
+                          <h5 class="card-title">Name:</h5>
+                          <p>Nissan </p>
+                          <h5 class="card-title">Model:</h5>
+                          <p> Titan XD 2017</p>
+                          <h5 class="card-title">Owner:</h5>
+                          <p>Unclaimed</p>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="card hover shadow car-item carlayout" style="width: 15rem; height:30rem; ">
+                        <img src="cars/Blue Tesla Model Y .png" class="card-img-top carPos" alt="mercedes-benz">
+                        <div class="card-body cardSize">
+                          <h5 class="card-title">Name:</h5>
+                          <p>Blue Tesla</p>
+                          <h5 class="card-title">Model:</h5>
+                          <p>Y</p>
+                          <h5 class="card-title">Owner:</h5>
+                          <p>Unclaimed</p>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="card hover shadow car-item carlayout" style="width: 15rem; height:30rem; ">
+                        <img src="cars/jeepwrangler.png" class="card-img-top carPos" alt="mercedes-benz">
+                        <div class="card-body cardSize">
+                          <h5 class="card-title">Name:</h5>
+                          <p>Jeep Wrangler</p>
+                          <h5 class="card-title">Model:</h5>
+                          <p>Unknown</p>
+                          <h5 class="card-title">Owner:</h5>
+                          <p>Unclaimed</p>
+                        </div>
+                    </div>
+                </td> 
+            </tr>
+            <tr>
+                <td>
+                    <div class="card hover shadow car-item carlayout" style="width: 15rem; height:30rem; ">
+                        <img src="cars/Motorcycle Harley-Davidson.png" class="card-img-top carPos" alt="mercedes-benz">
+                        <div class="card-body cardSize">
+                          <h5 class="card-title">Name:</h5>
+                          <p>Harvey Davidson</p>
+                          <h5 class="card-title">Model:</h5>
+                          <p>Unknown</p>
+                          <h5 class="card-title">Owner:</h5>
+                          <p>Unclaimed</p>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="card hover shadow car-item carlayout" style="width: 15rem; height:30rem; ">
+                        <img src="cars/silver minivan illustration, 2018 BMW X3 Car 2011 BMW 3 Series .png" class="card-img-top carPos" alt="mercedes-benz">
+                        <div class="card-body cardSize">
+                          <h5 class="card-title">Name:</h5>
+                          <p>BMW</p>
+                          <h5 class="card-title">Model:</h5>
+                          <p>3 Series</p>
+                          <h5 class="card-title">Owner:</h5>
+                          <p>Unclaimed</p>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="card hover shadow car-item carlayout" style="width: 15rem; height:30rem; ">
+                        <img src="cars/silver sedan, 2018 BMW 530i xDrive.png" class="card-img-top carPos" alt="mercedes-benz">
+                        <div class="card-body cardSize">
+                          <h5 class="card-title">Name:</h5>
+                          <p>BMW</p>
+                          <h5 class="card-title">Model:</h5>
+                          <p>530i 2018</p>
+                          <h5 class="card-title">Owner:</h5>
+                          <p>Unclaimed</p>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="card hover shadow car-item carlayout" style="width: 15rem; height:30rem; ">
+                        <img src="cars/white SUV, BMW X5 Car Cadillac SRX Lexus RX Sport utility vehicle.png" class="card-img-top carPos" alt="mercedes-benz">
+                        <div class="card-body cardSize">
+                          <h5 class="card-title">Name:</h5>
+                          <p>BMW X5</p>
+                          <h5 class="card-title">Model:</h5>
+                          <p>SRX Lexus</p>
+                          <h5 class="card-title">Owner:</h5>
+                          <p>You</p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+           
+        </table>
+    </section>
+</body>
+</html>

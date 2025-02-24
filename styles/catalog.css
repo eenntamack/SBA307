@@ -1,0 +1,127 @@
+.navStack{
+    width:50px;
+    height:5px;
+    background-color: black;
+    margin:5px;
+    margin-right:0px;
+}
+
+.navStackContainter{
+    height:auto;
+    display:flex;
+    width:auto;
+    align-content: space-between;
+    margin-right:0px;
+
+}
+
+.bColor{
+    background-color: rgb(161, 161, 222);
+}
+
+.mWidth{
+    width:100%;
+}
+
+.carPos{
+    margin-top:30px;
+    height:80rem;
+    transform:scale(0.85,0.85);
+    max-height: 130px;
+}
+
+.cardSize{
+    background-color: blanchedalmond;
+}
+
+.cardSize p{
+    height:30px;
+    background-color: rgb(155, 137, 111);
+    padding:5px;
+    border-radius:5px;
+}
+
+.section1{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    padding:30px;
+    width:90vw;
+}
+
+.log ul{
+    display:flex;
+    flex-direction:column;
+    list-style: none;
+    height: 38rem;
+}
+
+.log ul li{
+    width: 30rem;
+    height:69.4px;
+    background-color: rgb(155, 137, 111);
+    border-style: hidden;
+    border-radius: 15px;
+    padding:3px;
+    transform: translateY(0px);
+    transition: transform ease-in-out 0.25s;    
+}
+
+.log ul li:hover{
+    transform: translateY(10px);
+}
+
+.log ul li p , h3{
+    margin-left:5px;
+}
+
+.vr{
+    width:5px;
+    height:630px;
+}
+
+.hover{
+    transform: translateX(0px);
+    transition: transform ease-in-out 0.25s; 
+    transition:margin 0.25 ease-in-out;  
+}
+
+.hover:hover{
+    transform: translateX(10px);
+}
+
+button{
+    border-radius: 10px;
+    border-width: 3px;
+    border-style:solid;
+    border-color:  rgb(113, 99, 80); 
+    transition: border-width ease-in-out 0.25s;
+}
+
+button:hover{
+    border-width: 8px;
+}
+
+.car-item{
+    height: 250px;
+}
+
+.carlayout{
+    margin:13px;
+}
+.fixedBar{
+    display:block;
+}
+
+@media  screen and (max-width: 980px) {
+    .hover{
+        margin:0px;
+    }
+    table{
+        margin-left:40px;
+    }
+    .fixedBar{
+        display:flex;
+        flex-direction:column;
+    }
+}
